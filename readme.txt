@@ -65,6 +65,8 @@ git learn
 9.远程仓库	
 10.分支管理
    1.创建dev分支，并切换到dev分支
+     git checkout -b dev 
+	     撤回工作区编辑后未提交，会撤回工作区的修改，使其保持和master一致
      
-   
+     git branch 查看当前所有分支，会在当前分支前出现*
    
