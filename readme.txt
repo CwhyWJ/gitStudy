@@ -23,6 +23,7 @@ git learn
  4.版本回退
    git log ：显示从最近到最远的提交日志
    git log --pretty=oneline ：简化log显示的内容
+   git reflog ：记录每一次命令
    
    版本：
    HEAD   表示当前版本
@@ -30,5 +31,9 @@ git learn
    HEAD^^ 表示上上一个版本
    以此类推
    HEAD~100 上100个版本
+   
+   git reset --hard HEAD^ ：回退到上一个版本
+   git reset --hard commitId 部分 可以回退到相应的版本
+   
    
    
