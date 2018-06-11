@@ -69,4 +69,16 @@ git learn
 	     撤回工作区编辑后未提交，会撤回工作区的修改，使其保持和master一致
      
      git branch 查看当前所有分支，会在当前分支前出现*
+	 
+	 git add git commit在dev分支上的修改后，git checkout master 切换会master分支
+	 发现dev上修改的文件master上没有修改
+	 
+   2.合并分支
+     git merge dev : 合并指定的dev分支当当前的mastter分支
+	 Fast-forward 信息表明此次合并为“快进模式”，即直接把master只想dev当前的提交
+     合并完了后，删除dev分支：
+	 git branch -d dev
+	 
+	 7.多人协作
+	 
    
