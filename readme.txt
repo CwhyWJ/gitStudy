@@ -35,5 +35,29 @@ git learn
    git reset --hard HEAD^ ：回退到上一个版本
    git reset --hard commitId 部分 可以回退到相应的版本
    
+   5.工作区和暂存区
+    工作区：编辑文件所在目录
+	版本库：工作区的.git文件夹，是git的版本库
+	        版本库包含： stage（index）：暂存区
+			             master（Git自动创建的第一个分支master，以及指向master的指针HEAD）
+	git add操作，就是把文件添加到暂存区：stage
+	git commit操作，把暂存区所有内容提交到当前分支，此时暂存区就是干净的了
+	
+	6.管理修改
+	git 管理的是每次的修改
+	如果第一次修改，git add将修改提交到暂存区；接着继续修改文件，接着用
+	  git commit 只会将第一次add的修改提交到分支，第二次修改的部分因为没有add到
+	  暂存区，所以不会被commit到分支上
+	  
+	7.撤销修改
+	git checkout -- 文件 ：撤销工作区的修改
+	如果修改后没有add到缓存区，那么撤销的就是当前修改的部分
+	如果add到缓存区后又进行了修改，撤销的是add进缓存区后修改的部分
+	总之，撤销的是工作区的修改
+	
+	git reset HEAD <file> 撤销缓存区的修改，清空缓存区数据
+	HEAD 表示最新的版本
+	此时工作区是有修改部分，缓存区没有
+   
    
    
