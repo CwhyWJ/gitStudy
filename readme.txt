@@ -16,5 +16,19 @@ git learn
    git commit -m <message> 提交文件
  
  3.修改提交
-   git status ：修改完文件后，查看当前版本库的状态
-   gir diff ：查看修改的内容
+   git status ：修改完文件后，查看当前版本库的状态；提交后再次查看是否已经提交完了
+   
+   git diff ：查看修改的内容
+   
+ 4.版本回退
+   git log ：显示从最近到最远的提交日志
+   git log --pretty=oneline ：简化log显示的内容
+   
+   版本：
+   HEAD   表示当前版本
+   HEAD^  表示上一个版本
+   HEAD^^ 表示上上一个版本
+   以此类推
+   HEAD~100 上100个版本
+   
+   
