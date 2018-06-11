@@ -11,3 +11,10 @@ git learn
   常用文本的编码：中文GBK，日文Shift_JIS
   建议同一使用UTF-8编码
   【不使用记事本编辑文本，记事本保存UTF-8文件会在文件开头加0xefbbbf(十六进制)】
+  
+   git add 需要添加的文件
+   git commit -m <message> 提交文件
+ 
+ 3.修改提交
+   git status ：修改完文件后，查看当前版本库的状态
+   gir diff ：查看修改的内容
