@@ -78,6 +78,8 @@ git learn
 	 Fast-forward 信息表明此次合并为“快进模式”，即直接把master只想dev当前的提交
      合并完了后，删除dev分支：
 	 git branch -d dev
+   
+   分支管理策略
 	 
 	 7.多人协作
 	   当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
