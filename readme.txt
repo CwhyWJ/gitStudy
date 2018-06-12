@@ -80,5 +80,8 @@ git learn
 	 git branch -d dev
 	 
 	 7.多人协作
-	 
-     git创建分支 分支基础不是当前所属分支的HEAD指向？
+
+	   当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
+       git remote 查看远程库信息 
+	   
+	   git 创建分支 分支的基础不是当前所属分支的master？
