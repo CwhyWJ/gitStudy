@@ -12,20 +12,20 @@ git branch <name> 创建分支
 git branch -v 查看各分支最后一次提交
 git branch -merged 查看那些分支合并入当前分支
 git branch -no-merged 查看哪些分支维合并入当前分支
-<<<<<<< HEAD
 git branch -d mybranch 删除分支[合并分支后]
 git branch -D mybranch 强制删除分支
 
 
 git merge mtbranch 在当前分支快速合并其他分支
+git merge --no-ff -m "aad" mybranch  禁用Fast forward 
+        在merge时生成一个新的commit 看可以从分支历史上看出分支信息
 
 
 
-=======
-git branch -d mybranch 删除分支
-git branch -D mybranch 强制删除分支
 
 
->>>>>>> dev
+
+
+
 
     
