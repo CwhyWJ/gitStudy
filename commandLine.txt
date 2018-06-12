@@ -1,0 +1,20 @@
+git checkout --文件 撤销工作区的修改
+    |--git reset HEAD<file>  撤销缓存区的修改，本地修改不变
+git checkout mybranch 切换分支
+    |--git checkout master 切换到master分支
+       |--git merge <name> 合并某分支到当前分支
+git checkout -b mybranch 创建并切换到创建的分支
+
+    
+	
+git branch 列出所有分支	
+git branch <name> 创建分支
+git branch -v 查看各分支最后一次提交
+git branch -merged 查看那些分支合并入当前分支
+git branch -no-merged 查看哪些分支维合并入当前分支
+git branch -d mybranch 删除分支
+git branch -D mybranch 强制删除分支
+
+
+
+    

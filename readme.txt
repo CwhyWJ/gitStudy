@@ -70,7 +70,7 @@ git learn
      
      git branch 查看当前所有分支，会在当前分支前出现*
 	 
-	 git add git commit在dev分支上的修改后，git checkout master 切换会master分支
+	 git add git commit在dev分支上的修改后，git checkout master 切换回master分支
 	 发现dev上修改的文件master上没有修改
 	 
    2.合并分支
