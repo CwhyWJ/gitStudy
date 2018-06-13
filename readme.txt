@@ -79,7 +79,7 @@ git learn
      合并完了后，删除dev分支：
 	 git branch -d dev
    
-   分支管理策略
+   分支管理策略：理解git分支的结构，merge，擦黄建分支工作
 	 
 	 
    3.解决冲突
@@ -88,6 +88,30 @@ git learn
    4.分支管理策略
 		必须commit才可以切换分支，否则会被覆盖
    
+   5.bug分支
+      【应用情景：当前dev分支正在开发，来了一个bug001，
+	    理所当然想建立bug001分支对应bug，
+		但是当前的dev开发正在进行不可提交（需要commit才可以切换分支）
+		】
+		Git的stash功能：将当前工作现场储藏起来
+		git stash  后查看工作区，干净
+		切换到建立新分支的分支上，建立新分支修改bug
+		修改bug完成，提交到分支上
+		切回创建新分支的分支上，比如master，merge合并分支，删除bug分支
+		回dev分支干活：
+		git checkout dev
+		git stash list:查看之前存储工作现场的位置
+		回复工作现场：|--方法一：git stash apply恢复后stash内容没有删除，用git stash drop 删除bug分支
+		              |--方法二：git stash pop 恢复同时删除stash内容
+		
+		多次stash，恢复的时候就恢复指定的stash
+		git stash apply stash@{0}
+
+   6.Feature分支
+        【应用情景：新功能开发，为不破坏当前dev分支新建分支（可能新功能后来还有变动）】
+        git chheckout -b feature-vulcan
+         		
+		
 	 7.多人协作
 
 	   当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
