@@ -108,8 +108,14 @@ git learn
 		git stash apply stash@{0}
 
    6.Feature分支
-        【应用情景：新功能开发，为不破坏当前dev分支新建分支（可能新功能后来还有变动）】
+        【git checkout -b mybranch 创建的新分支的基础是工作区还是缓存区？】 
+		  实证：在过去没有add的记录在新分支中出现，所以基础是工作区？！】
+		【再问：这样回到原先分支要合并feature分支时候，merge合并的应该是
+		  两个缓存区的代码，那么当前分支的本地代码可能和merge后的代码有冲突】
+		【应用情景：新功能开发，为不破坏当前dev分支新建分支（可能新功能后来还有变动）】
         git chheckout -b feature-vulcan
+		
+		
          		
 		
 	 7.多人协作
