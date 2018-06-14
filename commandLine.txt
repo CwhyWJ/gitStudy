@@ -16,5 +16,15 @@ git branch -d mybranch 删除分支
 git branch -D mybranch 强制删除分支
 
 
+            不想提交当前工作区文件，git存储当前工作区
+git stash ：存储工作区，stash后，当前工作区干净，可以切换分支，创建新分支 
+            恢复工作区：
+git stash list : 查看存储工作现场的位置
+git stash apply : 恢复工作现场，但是存储的工作现场没有被删除
+    多存储的stash只能用apply 恢复：git stash apply @{0}
+    git stash drop  删除对工作现场的存储
+	git stash pop   恢复工作现场同时删除stash内容
+
+
 
     

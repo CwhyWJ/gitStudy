@@ -124,11 +124,18 @@ git learn
 		
 		
          		
-		
+	【git fetch : 会把远程服务器上的所有更新都拉取下来
+	  git pull  ：远程分支上的代码拉取并合并到本地
+	  git checkout -b new_branch origin/new_branch  拉去特定远程分支到本地（本地没有）
+	 】	
 	 7.多人协作
 
 	   当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
        git remote 查看远程库信息 
+	   git remote -v
+	       返回fetch:抓取分支 push:推送分支
+		   
+	   git push origin master 推送本地master到远程
 	   
 	   
 	   其他同时工作区与当前分支工作冲突的解决：
