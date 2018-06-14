@@ -130,6 +130,18 @@ git learn
 	   当你从远程仓库克隆时，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且，远程仓库的默认名称是origin。
        git remote 查看远程库信息 
 	   
+	   
+	   其他同时工作区与当前分支工作冲突的解决：
+	    集中推送本地分支dev到远程分支的方法：
+        a.远程有dev分支，且与本地dev分支已经关联,当前所处为需要push的分支
+			git push
+        b.远程有dev分支，但是没有与本地dev分支关联，且当前所处为需要提交的分支
+		    git push -u origin/dev		
+	        [建立关联：git branch --set-upstream-to origin/dev dev]
+	    c.远程没有dev分支，本地所处为需要push的分支
+		    git push origin dev:dev（远程）
+			
+			
 	   git 创建分支 分支的基础不是当前所属分支的master？
 	   
 	   
