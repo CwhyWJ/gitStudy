@@ -135,6 +135,10 @@ git learn
 	   git remote -v
 	       返回fetch:抓取分支 push:推送分支
 		   
+		   
+		   
+		git push 时出现错误，显示远程分支与自己提交部分有冲突
+		git pull 获取远程分支新代码并merge时出现错误，打开文件解决错误   
 	   git push origin master 推送本地master到远程
 	   
 	   
