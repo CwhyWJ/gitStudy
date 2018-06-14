@@ -135,13 +135,24 @@ git learn
 	   git remote -v
 	       返回fetch:抓取分支 push:推送分支
 		   
-		   
-		   
+		
 		git push 时出现错误，显示远程分支与自己提交部分有冲突
 		git pull 获取远程分支新代码并merge时出现错误，打开文件解决错误   
+		
 	   git push origin master 推送本地master到远程
 	   
 	   
+	   其他同时工作区与当前分支工作冲突的解决：
+	    集中推送本地分支dev到远程分支的方法：
+        a.远程有dev分支，且与本地dev分支已经关联,当前所处为需要push的分支
+			git push
+        b.远程有dev分支，但是没有与本地dev分支关联，且当前所处为需要提交的分支
+		    git push -u origin/dev		
+	        [建立关联：git branch --set-upstream-to origin/dev dev]
+	    c.远程没有dev分支，本地所处为需要push的分支
+		    git push origin dev:dev（远程）
+			
+			
 	   git 创建分支 分支的基础不是当前所属分支的master？
 	   
 	   
